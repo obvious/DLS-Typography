@@ -11,4 +11,21 @@
   <attr name="colorTextSecondary" format="color" />
   <attr name="colorTextTertiary" format="color" />
   <attr name="colorTextDisabled" format="color" />
+
+  <!--  DLS TextView styleable-->
+  <declare-styleable name="DLSTextView">
+    <attr name="dlsTextStyle" format="enum">
+      <enum name="header1" value="0" />
+      <enum name="header2" value="1" />
+      <enum name="header3" value="2" />
+      <enum name="header4" value="3" />
+    </attr>
+
+    <attr name="dlsTextColor" format="enum">
+      <enum name="color_text_primary" value="0" />
+      <enum name="color_text_secondary" value="1" />
+      <enum name="color_text_tertiary" value="2" />
+      <enum name="color_text_disabled" value="3" />
+    </attr>
+  </declare-styleable>
 </resources>

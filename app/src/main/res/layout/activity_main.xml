@@ -4,17 +4,52 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity">
+  tools:context=".MainActivity"
+  tools:ignore="HardcodedText">
 
-  <com.google.android.material.textview.MaterialTextView
+  <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Hello World!"
-    android:textAppearance="?textAppearanceHeader4"
-    android:textColor="?colorTextDisabled"
+    android:orientation="vertical"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    app:layout_constraintTop_toTopOf="parent">
+
+    <in.obvious.dls.typography.DlsTextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Header 1"
+      app:dlsTextColor="color_text_primary"
+      app:dlsTextStyle="header1" />
+
+    <in.obvious.dls.typography.DlsTextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Header 2"
+      app:dlsTextColor="color_text_secondary"
+      app:dlsTextStyle="header2" />
+
+    <in.obvious.dls.typography.DlsTextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Header 3"
+      app:dlsTextColor="color_text_tertiary"
+      app:dlsTextStyle="header3" />
+
+    <in.obvious.dls.typography.DlsTextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Header 4"
+      app:dlsTextColor="color_text_disabled"
+      app:dlsTextStyle="header4" />
+  </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
