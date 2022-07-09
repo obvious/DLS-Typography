@@ -5,4 +5,10 @@
   <attr name="textAppearanceHeader2" format="reference" />
   <attr name="textAppearanceHeader3" format="reference" />
   <attr name="textAppearanceHeader4" format="reference" />
+
+  <!--  Color attributes-->
+  <attr name="colorTextPrimary" format="color" />
+  <attr name="colorTextSecondary" format="color" />
+  <attr name="colorTextTertiary" format="color" />
+  <attr name="colorTextDisabled" format="color" />
 </resources>

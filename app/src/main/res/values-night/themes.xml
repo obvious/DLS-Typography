@@ -3,5 +3,10 @@
     <item name="colorPrimary">@color/purple_200</item>
     <item name="colorPrimaryVariant">@color/purple_700</item>
     <item name="colorOnPrimary">@color/black</item>
+
+    <item name="colorTextPrimary">@color/white_alpha_90</item>
+    <item name="colorTextSecondary">@color/white_alpha_70</item>
+    <item name="colorTextTertiary">@color/white_alpha_40</item>
+    <item name="colorTextDisabled">@color/white_alpha_30</item>
   </style>
 </resources>

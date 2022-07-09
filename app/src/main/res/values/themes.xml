@@ -12,5 +12,10 @@
     <item name="colorPrimary">@color/purple_500</item>
     <item name="colorPrimaryVariant">@color/purple_700</item>
     <item name="colorOnPrimary">@color/white</item>
+
+    <item name="colorTextPrimary">@color/black_alpha_90</item>
+    <item name="colorTextSecondary">@color/black_alpha_70</item>
+    <item name="colorTextTertiary">@color/black_alpha_40</item>
+    <item name="colorTextDisabled">@color/black_alpha_30</item>
   </style>
 </resources>
