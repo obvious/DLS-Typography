@@ -1,5 +1,14 @@
 <resources>
-  <style name="Theme.DLSTypography" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+  <style name="Base.Theme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!--    Typography, styled in the base theme as it's common across light/dark color modes-->
+    <item name="textAppearanceHeader1">@style/TextAppearance.App.Header1</item>
+    <item name="textAppearanceHeader2">@style/TextAppearance.App.Header2</item>
+    <item name="textAppearanceHeader3">@style/TextAppearance.App.Header3</item>
+    <item name="textAppearanceHeader4">@style/TextAppearance.App.Header4</item>
+  </style>
+
+  <style name="Theme.DLSTypography" parent="Base.Theme">
     <item name="colorPrimary">@color/purple_500</item>
     <item name="colorPrimaryVariant">@color/purple_700</item>
     <item name="colorOnPrimary">@color/white</item>

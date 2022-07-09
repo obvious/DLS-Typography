@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  Typography attributes-->
+  <attr name="textAppearanceHeader1" format="reference" />
+  <attr name="textAppearanceHeader2" format="reference" />
+  <attr name="textAppearanceHeader3" format="reference" />
+  <attr name="textAppearanceHeader4" format="reference" />
+</resources>
