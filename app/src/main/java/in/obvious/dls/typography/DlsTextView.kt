@@ -3,12 +3,14 @@ package `in`.obvious.dls.typography
 import `in`.obvious.dls.typography.TextColor.TEXT_PRIMARY
 import `in`.obvious.dls.typography.TextStyle.HEADER4
 import android.content.Context
+import android.content.res.ColorStateList
 import android.util.AttributeSet
 import androidx.annotation.AttrRes
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.use
 import androidx.core.widget.TextViewCompat
 import com.google.android.material.textview.MaterialTextView
+import kotlin.DeprecationLevel.HIDDEN
 
 class DlsTextView(
     context: Context,
@@ -34,7 +36,22 @@ class DlsTextView(
 
   fun setTextColor(textColor: TextColor) {
     val resId = obtainAttributeResId(textColor.colorAttr)
-    setTextColor(ContextCompat.getColor(context, resId))
+    super.setTextColor(ContextCompat.getColor(context, resId))
+  }
+
+  @Deprecated(message = "Not supported by Design System", level = HIDDEN)
+  override fun setTextColor(color: Int) {
+    super.setTextColor(color)
+  }
+
+  @Deprecated(message = "Not supported by Design System", level = HIDDEN)
+  override fun setTextColor(colors: ColorStateList?) {
+    super.setTextColor(colors)
+  }
+
+  @Deprecated(message = "Not supported by Design System", level = HIDDEN)
+  override fun setTextAppearance(resId: Int) {
+    super.setTextAppearance(resId)
   }
 
   /**
